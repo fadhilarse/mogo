@@ -16,7 +16,7 @@ Agronomy Roadmap: Penjadwalan latar belakang (cron job) untuk memperbarui siklus
 
 Frontend: React.js, Vite, React Router, Tailwind CSS
 
-Backend: Elysia.js, Bun Runtime
+Backend: Elysia.js, Bun
 
 Database: PostgreSQL
 
@@ -62,7 +62,7 @@ CREATE DATABASE mogo_db;
 
 Import file database:
 
-psql -U postgres -d mogo_db -f mogo_db.sql
+psql -U postgres -d mogo_db < mogo_db.sql
 
 
 Opsi B: Menggunakan pgAdmin (GUI)
@@ -89,7 +89,7 @@ Instal semua dependensi menggunakan Bun:
 bun install
 
 
-Buat file bernama .env di dalam folder backend dan isi dengan konfigurasi database lokal Anda untuk menghubungkan backend ke database:
+Buat file bernama .env di dalam folder backend dan isi dengan konfigurasi database lokal Anda:
 
 DB_USER=postgres
 DB_PASSWORD=password_postgres_anda
@@ -147,5 +147,4 @@ npm run dev
 🌐 Mengakses Aplikasi
 
 Jika semua server (Backend, AI, dan Frontend) sudah berjalan tanpa error, Anda dapat mengakses aplikasi MOGO melalui browser di alamat berikut:
-
 http://localhost:5173
